@@ -1,13 +1,13 @@
 import {
   NativeModulesProxy,
   EventEmitter,
-  Subscription,
+  type Subscription,
 } from "expo-modules-core";
 
 // Import the native module. On web, it will be resolved to Ahap.web.ts
 // and on native platforms to Ahap.ts
 import AhapModule from "./src/AhapModule";
-import { ChangeEventPayload } from "./src/Ahap.types";
+import type { ChangeEventPayload } from "./src/Ahap.types";
 
 /**
  * Parameters used to modify individual haptic and/or audio events.
